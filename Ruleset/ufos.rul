@@ -1,4 +1,50 @@
 ﻿ufos:
+  # STR_BOUNTY_HUNTER_TRANSPORT is the vehicle bounty hunters use to come after
+  # X-COM. It is a real, interceptable UFO (unlike the old STR_BOUNTY_HUNTING_SITE
+  # mission-site spawn), so targetBaseOdds on the bountyHunting missionScript
+  # entry can now actually redirect it to raid a player base. Stats are modest
+  # and intentionally weak/slow so it's an easy, fair intercept target - the
+  # threat is meant to come from the ground battle, not the dogfight.
+  # Battlescape reuses the RAIDER_CARAVAN map/terrain data that already ships
+  # with the mod (previously defined but unused on STR_CARAVAN_RAIDERS_UFO).
+  - type: STR_BOUNTY_HUNTER_TRANSPORT
+    size: STR_VERY_SMALL
+    sprite: 0
+    damageMax: 60
+    speedMax: 300
+    power: 20
+    range: 5
+    score: 20
+    reload: 30
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: RAIDER_CARAVAN
+      mapDataSets:
+      - BLANKS
+      - WAGON_FALLOUT
+      - XARMY
+      mapBlocks:
+        - name: RAIDER_CARAVAN
+          width: 10
+          length: 20
+          items:
+            STR_CARAVAN_CRATE:
+              - [ 1, 12, 0]
+              - [ 6, 7, 0]
+              - [ 0, 0, 0]
+            STR_WEAPON_CRATE:
+              - [ 1, 13, 0]
+            STR_AMMUNITION_CRATE:
+              - [ 0, 1, 0]
+            STR_VALUABLES_CRATE:
+              - [ 1, 14, 0]
+              - [ 1, 0, 0]
+            STR_HIGH_TECH_CRATE:
+              - [ 6, 6, 0]
+            STR_MEDICAL_CRATE:
+              - [ 5, 6, 0]
+              - [ 5, 7, 0]
+
   - type: STR_CARAVAN_ORDER_UFO #RAIDER
     size: STR_VERY_SMALL
     #modSprite: UFORAIDER

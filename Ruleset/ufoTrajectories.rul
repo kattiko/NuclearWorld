@@ -4,3 +4,15 @@
     groundTimer: 0
     waypoints:
       - [0, 0, 0]
+
+  # Used by STR_BOUNTY_HUNTER_TRANSPORT: the craft enters at high altitude and
+  # full speed, then descends to land in the same mission zone (reusing
+  # spawnZone: 4, already used by this mission for STR_BOUNTY_HUNTING). It sits
+  # on the ground for a while (groundTimer, in seconds) giving X-COM a window to
+  # intercept it before it either finishes its raid or - if targetBaseOdds
+  # rolls successfully - gets redirected into a base attack instead.
+  - id: P_RAID
+    groundTimer: 1200
+    waypoints:
+      - [4, 3, 100]
+      - [4, 0, 20]

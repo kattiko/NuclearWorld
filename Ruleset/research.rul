@@ -509,6 +509,36 @@ research:
       - STR_FACTION_GHOULS
     disables: [STR_ALLY_GHOULS]
 
+  # --- Endgame gate ---
+  # STR_ORIGIN_OF_THE_HORDE is the capstone topic: it only becomes available once
+  # X-COM has made contact with (allied with OR made an enemy of, doesn't matter
+  # which) all three human factions and both monster factions. This represents
+  # X-COM finally having explored enough of the wasteland to piece together where
+  # the Feral Mutant Horde is massing and why. It deliberately does NOT depend on
+  # STR_ENEMY_MUTANTS specifically, since that would make the ending unreachable
+  # for players who chose to ally with the mutants instead.
+  - name: STR_ORIGIN_OF_THE_HORDE
+    cost: 150
+    points: 200
+    dependencies:
+      - STR_FACTION_CHURCH
+      - STR_FACTION_RAIDERS
+      - STR_FACTION_ORDER
+      - STR_FACTION_MUTANTS
+      - STR_FACTION_GHOULS
+    unlocks:
+      - STR_FINAL_ONSLAUGHT
+
+  # This is the actual "trigger" topic: its name matches the finalOnslaught
+  # missionScript entry's researchTriggers key, so completing it is what allows
+  # the final battle's mission script to start rolling. Kept cheap and fast once
+  # unlocked, since the real gate is STR_ORIGIN_OF_THE_HORDE above.
+  - name: STR_FINAL_ONSLAUGHT
+    cost: 10
+    points: 100
+    dependencies:
+      - STR_ORIGIN_OF_THE_HORDE
+
   - name: STR_WHAT_NOW
     cost: 20
     points: 50

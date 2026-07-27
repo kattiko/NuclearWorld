@@ -241,7 +241,7 @@ armors:
     spriteSheet: POWERARMOR.PCK
     spriteInv: POWERARMOR_INV
     corpseBattle:
-      - STR_POWER_ARMOR_CORPSE
+      - STR_CORPSE_POWER_ARMOR
     storeItem: STR_POWER_ARMOR
     frontArmor: 80
     sideArmor: 70

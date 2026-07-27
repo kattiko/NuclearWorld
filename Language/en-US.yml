@@ -1226,6 +1226,10 @@ en-US:
   STR_PREPPERS_UFOPAEDIA: "We are not the only people that survived The War. There are many small shelters and abandoned facilities habited by the Preppers. They don't want to talk with anyone. They lost the trust they had together with the bombing of the world. Preppers are well equipped and dangerous. But probably... they also have a lot of resources. Maybe it's going to be a good idea to... check what they have... by force. We can spend some time getting clues about them."
   STR_LOCATING_PREPPERS_SITES_UFOPAEDIA: "So, we are using our contacts with the Settlers to try to track any clue about the so-called Preppers. They seem pretty slippery, appearing from nowhere, raiding a bit here and there, then vanishing in the air. Based on what we heard about them, their modus operandi seems quite similar to ours when we collect resources. We hope our contacts are able to get more than rumours and an actual location for us to pay them a visit."
   STR_RAIDING_PREPPERS_SITES_UFOPAEDIA: "Oh, boy. It took us a lot of time and effort to find them, but our reliable contacts managed to pinpoint several of their hideouts. It seems many of them barricated themselves inside old labs and military bases, which are potential sources of high-tech assets and good equipment. It was an open whisper, with many denying their existance as mere rumours, but now we are able to wait for them to become visible, and then raid them to seize their tech for us." 
+
+  STR_ORIGIN_OF_THE_HORDE_UFOPAEDIA: "Piece by piece, the picture is finally coming together. Every faction we've dealt with, the Church, the Order, the Raiders, and even the mutants and ghouls, all tell the same story from a different angle: something is organizing the ferals. Not just herding them, directing them. Cross-referencing every scrap of intel we've gathered, our people think they've found it: a single point in the wasteland the horde treats as sacred ground. If we're going to end this, that's where we end it."
+
+  STR_FINAL_ONSLAUGHT_UFOPAEDIA: "The horde is moving. Every feral mutant for a hundred miles is converging on one point, and our scouts say it isn't scattering, it's massing. Whatever we found out there, we've clearly kicked a hornet's nest. We should expect them to come for us before we ever reach them. All personnel to combat readiness."
   STR_CITIZENS_UFOPAEDIA: "We don't know much about The Citizens. They survived somehow the War. We were unable to make contact with them, rumor has it they have access to old technology. The Settlers are saying that the flying object we can see from time to time belongs to The Citizens. These people ignore everyone until you stay on their way. Equipped with powerful weapons and armors they are able to exterminate anyone."
   STR_RECRUITABLE_WORKERS_UFOPAEDIA: "Thanks to our contacts with The Settlers we can now hire more people willing to do heavy work for us."
   STR_RESCUEABLE_SCIENTISTS_UFOPAEDIA: "The Settlers will send to us scientists, under one condition: we have to do the dirty work. They will tell us from time to time where are their enemies. In exchange for clearing the sites they will reward us with research power."
@@ -1254,6 +1258,8 @@ en-US:
   STR_BASIC_MEDICINE_UFOPAEDIA: "Our scientics made a huge step towards keeping us alive. We are able to make basic medicine now."
   STR_BASIC_STIMULANT_UFOPAEDIA: "Researchers had a lot of fun probably making stimulants and drugs for rest of us, but- progress is progress. We can produce now basic stimulants and drugs."
   STR_STIMPAK_UFOPAEDIA: "An autoinjector full of morphine and other substances. Basic, but effective way to keep our soldiers alive during combat."
+
+  STR_BANDAGE_UFOPAEDIA: "Strips of boiled cloth used to bind wounds and stop bleeding. It won't dull pain or fight infection like a proper stimpak, but it's cheap, plentiful, and keeps people from bleeding out in the dirt."
   STR_EDIBLE_MUSHROOM_UFOPAEDIA: "Where edible it's not very tasty. But it gets the job done. Doesn't require light, it's possible to grow it in our shelter."
   STR_STIMULANT_HERB_UFOPAEDIA: "Just smelling this herb gives energy. We should be able to use it to make stimulants or drugs."
   STR_HEALING_HERB_UFOPAEDIA: "Mix of herbs known for their healing power. Used to make a proper medicine."
@@ -1315,6 +1321,8 @@ en-US:
   STR_LASER_RIFLE_UFOPAEDIA: "One of the best weapons before the War, the sturdy AET7 Laser Rifle energy weapon fires a light beam with a chance to frying the target. Its rate of fire is quite slow, though. Consumes 3 points of battery per shot."
   STR_LASER_GATLING_UFOPAEDIA: "Heavy energy automatic weapon, its twin barrels spin after a bit before unleasing a storm of laser beams. The main issue is the somewhat inaccuracy in prolonged discharges. Consumes 1 point of battery per shot."
   STR_BASTARD_UFOPAEDIA: "Nicknamed 'frankengun' and 'bastard', this rifle? SMG? is a mix of several spare parts and scrap. Really easy to manufacture, it fires 5.56mm FMJ rounds from a somewhat unsafe, side-loaded ammo clip. The accuracy is mediocre at best, but its compensated by having a vicious rate of fire."
+
+  STR_DMR_UFOPAEDIA: "A Designated Marksman Rifle chambered for 5.56mm, built for aimed single shots rather than volume of fire. Slower to bring to bear than the Bastard, but far more accurate at range, making it a favorite among wasteland scouts and snipers."
   STR_PULSE_RIFLE_UFOPAEDIA: "The Y2K energy gun discharges an electric pulse able to fry mechanical and organic targets with ease. Also, it looks like something taken from a pulp magazine! There are so few models around, so people often demise its existence as a myth."
   STR_CELL_PULSE_RIFLE_UFOPAEDIA: "A custom made Microfusion Cell, modified to release a large amount of energy at once. The major downside was the increased production costs and certain 'incidents' with exploding Cells after receiving hits on the ground or even body parts... with disastrous consequences, it seems. "
   STR_10MM_PISTOL_UFOPAEDIA: "Very rugged, very durable, somewhat cumbersome and kinda ugly, this handgun was widely praised before the War due its cheap production costs and great physical resistance to damage. Very popular among the wastelanders for those features."
@@ -1562,6 +1570,8 @@ en-US:
   STR_ORDER_RIFLEMAN_NPC: "Order Rifleman"
   STR_ORDER_CQB_NPC: "Order Stormtrooper"
   
+  STR_CITIZEN: "Wastelander"
+
   STR_PREPPER: "Prepper Survivalists "
   STR_PREPPER_COMMANDER: "Prepper Overseer"
   STR_PREPPER_LEADER: "Prepper Leader"

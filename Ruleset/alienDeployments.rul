@@ -603,8 +603,8 @@
             - STR_EDIBLE_MUSHROOM
             - STR_WEAPON_CRATE
           - 
-            - STR_CROSSBOW
-            - STR_CROSSBOW_BELTS
+            - STR_LASER_RIFLE
+            - STR_MICROFUSION_CELLS
             - STR_EDIBLE_MUSHROOM
             - STR_WEAPON_CRATE
 
@@ -758,9 +758,9 @@
             - STR_EDIBLE_MUSHROOM
             - STR_WEAPON_CRATE
           - 
-            - STR_CROSSBOW
-            - STR_CROSSBOW_BELTS
-            - STR_EDIBLE_MUSHROOM
+            - STR_PULSE_RIFLE
+            - STR_CELL_PULSE_RIFLE
+            - STR_CELL_PULSE_RIFLE
             - STR_WEAPON_CRATE
 
   - type: STR_RAID_GHOUL_SITE
@@ -1214,9 +1214,9 @@
             - STR_STIMPAK
             - STR_WEAPON_CRATE
           - 
-            - STR_BASTARD
-            - STR_556MM_RIFLE_CLIP
-            - STR_556MM_RIFLE_CLIP
+            - STR_PLASMA_GUN
+            - STR_PLASMA_CARTRIDGE
+            - STR_PLASMA_CARTRIDGE
             - STR_STIMPAK
             - STR_WEAPON_CRATE
       - alienRank: 3
@@ -1507,9 +1507,9 @@
             - STR_EDIBLE_MUSHROOM
             - STR_WEAPON_CRATE
           - 
-            - STR_CROSSBOW
-            - STR_CROSSBOW_BELTS 
-            - STR_EDIBLE_MUSHROOM
+            - STR_PULSE_RIFLE
+            - STR_CELL_PULSE_RIFLE
+            - STR_CELL_PULSE_RIFLE
             - STR_WEAPON_CRATE
       - alienRank: 5
         lowQty: 4
@@ -1920,9 +1920,8 @@
             - STR_BANDAGE
             - STR_WEAPON_CRATE
           - 
-            - STR_BOZAR
-            - STR_556MM_RIFLE_MAG
-            - STR_556MM_RIFLE_MAG
+            - STR_LASER_GATLING
+            - STR_MICROFUSION_CELLS
             - STR_BANDAGE
             - STR_WEAPON_CRATE    
       - alienRank: 5
@@ -2057,9 +2056,8 @@
             - STR_STIMPAK
             - STR_WEAPON_CRATE
           - 
-            - STR_BASTARD
-            - STR_556MM_RIFLE_CLIP
-            - STR_556MM_RIFLE_CLIP
+            - STR_LASER_RIFLE
+            - STR_MICROFUSION_CELLS
             - STR_STIMPAK
             - STR_WEAPON_CRATE
       - alienRank: 3
@@ -2593,6 +2591,81 @@
             - STR_MINIGUN
             - STR_7.62MM_MINIGUN
             - STR_AMMUNITION_CRATE
+
+  - type: STR_BOUNTY_HUNTER_TRANSPORT
+    # Crew/loot table for the bounty hunter vehicle (see ufos.rul) when it is
+    # shot down or lands normally (i.e. NOT when it is redirected into a base
+    # attack by targetBaseOdds - that case always uses the game's built-in
+    # STR_BASE_DEFENSE deployment instead). Cloned from STR_BOUNTY_HUNTING_SITE
+    # so the encounter feels the same either way.
+    data:
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        extraQty: 0        
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_10MM_PISTOL
+            - STR_10MM_PISTOL
+            - STR_10MM
+            - STR_10MM
+            - STR_10MM
+            - STR_POUCH_OF_MONEY
+          - 
+            - STR_REVOLVER
+            - STR_REVOLVER
+            - STR_REVOLVER_CLIP
+            - STR_REVOLVER_CLIP
+            - STR_REVOLVER_CLIP
+            - STR_POUCH_OF_MONEY
+          - 
+            - STR_REVOLVER
+            - STR_REVOLVER
+            - STR_REVOLVER_CLIP
+            - STR_REVOLVER_CLIP
+            - STR_REVOLVER_CLIP
+            - STR_REVOLVER_CLIP
+            - STR_POUCH_OF_MONEY
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        extraQty: 0        
+        percentageOutsideUfo: 70
+        itemSets:
+          - 
+            - STR_PREWAR_SMG
+            - STR_10MM_SMG
+            - STR_10MM_SMG        
+          -
+            - STR_BOZAR
+            - STR_556MM_RIFLE_MAG
+            - STR_556MM_RIFLE_MAG
+          - 
+            - STR_MINIGUN
+            - STR_7.62MM_MINIGUN
+
+      - alienRank: 2
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        extraQty: 0        
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_10MM_PISTOL
+            - STR_10MM
+            - STR_10MM
+          - 
+            - STR_PREWAR_SMG
+            - STR_10MM_SMG
+            - STR_10MM_SMG
+          - 
+            - STR_PREWAR_SHOTGUN
+            - STR_PREWAR_SHOTGUN_SHELLS
+            - STR_PREWAR_SHOTGUN_SHELLS
 
   - type: STR_BOUNTY_HUNTING_SITE
     alert: STR_BOUNTY_HUNTING_SITE_ALERT

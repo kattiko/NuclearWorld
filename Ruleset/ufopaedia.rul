@@ -166,6 +166,20 @@ ufopaedia:
     requires:
       - STR_RAIDING_PREPPERS_SITES
 
+  - id: STR_ORIGIN_OF_THE_HORDE
+    type_id: 8
+    text: STR_ORIGIN_OF_THE_HORDE_UFOPAEDIA
+    section: STR_JOURNAL
+    requires:
+      - STR_ORIGIN_OF_THE_HORDE
+
+  - id: STR_FINAL_ONSLAUGHT
+    type_id: 8
+    text: STR_FINAL_ONSLAUGHT_UFOPAEDIA
+    section: STR_JOURNAL
+    requires:
+      - STR_FINAL_ONSLAUGHT
+
   - id: STR_SKINNING
     type_id: 8
     text: STR_SKINNING_UFOPAEDIA
@@ -373,6 +387,13 @@ ufopaedia:
     requires:
       - STR_STIMPAK
 
+  - id: STR_BANDAGE
+    type_id: 4
+    text: STR_BANDAGE_UFOPAEDIA
+    section: STR_EQUIPMENT_UC
+    requires:
+      - STR_BANDAGE
+
   - id: STR_MEGA_STIMPAK
     type_id: 4
     text: STR_MEGA_STIMPAK_UFOPAEDIA
@@ -512,6 +533,13 @@ ufopaedia:
     section: STR_EQUIPMENT_UC
     requires:
       - STR_BASTARD
+
+  - id: STR_DMR
+    type_id: 4
+    text: STR_DMR_UFOPAEDIA
+    section: STR_EQUIPMENT_UC
+    requires:
+      - STR_DMR
 
   - id: STR_LASER_RIFLE
     type_id: 4

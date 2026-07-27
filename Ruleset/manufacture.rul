@@ -637,7 +637,7 @@ manufacture:
   - name: STR_UNTRAINED_SCIENTIST
     category: STR_TRAINING  
     space: 0
-    time: 128
+    time: 94
     cost: 0
     producedItems: {} # empty
     spawnedPersonType: STR_SCIENTIST

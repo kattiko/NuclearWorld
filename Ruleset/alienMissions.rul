@@ -456,9 +456,9 @@
         STR_GHOUL: 15
         STR_ORDER: 10
     waves:
-      - ufo: STR_BOUNTY_HUNTING_SITE # spawn this site directly
+      - ufo: STR_BOUNTY_HUNTER_TRANSPORT # a real, interceptable craft (was: direct site spawn)
         count: 1
-        trajectory: P10
+        trajectory: P_RAID
         timer: 0
         objective: true
 
