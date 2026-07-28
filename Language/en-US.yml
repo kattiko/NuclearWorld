@@ -1670,3 +1670,5 @@ en-US:
   STR_PREWAR_SENTRYBOT_UNIT: "Reclaimed Sentry Bot"
   STR_PREWAR_ROBOTS_SITE_ALERT: "Prewar robot activity detected"
   STR_PREWAR_ROBOTS_SITE_MARKER_NAME: "RUINS-{0}"
+  STR_PREWAR_ROBOTS_SITE_BRIEFING: "Local Settlers told us of a group of prewar robots that recently reactivated and have been causing damage. Proceed with extreme caution, these robots were built for the Great War and carry advanced weaponry."
+

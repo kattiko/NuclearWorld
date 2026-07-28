@@ -2373,7 +2373,7 @@ items:
     tuSnap: 40
     tuAimed: 60
     battleType: 1
-    twoHanded: true
+    fixedWeapon: true
     invWidth: 1
     invHeight: 3
     turretType: 2
@@ -2399,7 +2399,7 @@ items:
     tuSnap: 25
     tuAimed: 45
     battleType: 1
-    twoHanded: true
+    fixedWeapon: true
     invWidth: 1
     invHeight: 3
     turretType: 3
@@ -2421,7 +2421,7 @@ items:
     tuSnap: 40
     tuAimed: 60
     battleType: 1
-    twoHanded: true
+    fixedWeapon: true
     invWidth: 2
     invHeight: 3
     recover: false
