@@ -2980,3 +2980,50 @@
     markerName: STR_RAID_OCCUPATION_SITE_MARKER_NAME
     duration: [240, 720]
     data: *RaidersTerrorData
+
+  - type: STR_PREWAR_ROBOTS_SITE
+    alert: STR_PREWAR_ROBOTS_SITE_ALERT
+    width: 50
+    length: 50
+    height: 5
+    markerIcon: 21 # Military Base
+    missionBountyItem: STR_HIGH_TECH_CRATE
+    missionBountyItemCount: 1
+    terrains: *PatrolTerrains
+    alertBackground: BACK03.SCR
+    markerName: STR_PREWAR_ROBOTS_SITE_MARKER_NAME
+    duration: [24, 240]
+    data:
+      - alienRank: 0
+        lowQty: 0
+        highQty: 1
+        dQty: 0
+        extraQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PREWAR_SENTRYBOT_WEAPON
+            - STR_2MM_EC_GAUSS_ROUNDS
+            - STR_2MM_EC_GAUSS_ROUNDS
+      - alienRank: 1
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        extraQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PREWAR_TANKBOT_WEAPON
+            - STR_PLASMA_CARTRIDGE
+            - STR_PLASMA_CARTRIDGE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        extraQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PREWAR_EYEBOT_WEAPON
+            - STR_MICROFUSION_CELLS
+            - STR_MICROFUSION_CELLS

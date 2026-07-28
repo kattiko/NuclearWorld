@@ -2355,3 +2355,240 @@ items:
     armor: 30
     recover: true
 
+
+  # --- Prewar Robots: unlootable weapon copies (enemy-only, recover: false) ---
+  - type: STR_PREWAR_TANKBOT_WEAPON
+    name: STR_PLASMA_GUN
+    size: 0.2
+    weight: 4
+    bigSprite: 570
+    floorSprite: 570
+    handSprite: 570
+    bulletSprite: 13
+    fireSound: 4
+    compatibleAmmo:
+      - STR_PLASMA_CARTRIDGE
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuSnap: 40
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    turretType: 2
+    recover: false
+
+  - type: STR_PREWAR_EYEBOT_WEAPON
+    name: STR_LASER_RIFLE
+    size: 0.2
+    weight: 4
+    bigSprite: 920
+    floorSprite: 920
+    handSprite: 920
+    bulletSprite: 14
+    fireSound: 4
+    compatibleAmmo:
+      - STR_MICROFUSION_CELLS
+    accuracySnap: 85
+    accuracyAimed: 110
+    confAimed:
+      spendPerShot: 3
+    confSnap:
+      spendPerShot: 3
+    tuSnap: 25
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    turretType: 3
+    recover: false
+
+  - type: STR_PREWAR_SENTRYBOT_WEAPON
+    name: STR_GAUSS_RIFLE
+    size: 0.2
+    weight: 7
+    bigSprite: 540
+    floorSprite: 540
+    handSprite: 540
+    bulletSprite: 15
+    fireSound: 4
+    compatibleAmmo:
+      - STR_2MM_EC_GAUSS_ROUNDS
+    accuracySnap: 75
+    accuracyAimed: 120
+    tuSnap: 40
+    tuAimed: 60
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+
+  # --- Prewar Robots: corpse items ---
+  # Logical/recoverable corpse used for research & manufacturing (auto-produced
+  # from corpseGeo when the battlefield death pieces below are recovered).
+  - type: STR_PREWAR_TANKBOT_CORPSE
+    size: 1
+    costSell: 45000
+    battleType: 11
+
+  - type: STR_PREWAR_EYEBOT_CORPSE
+    size: 1
+    costSell: 30000
+    battleType: 11
+
+  - type: STR_PREWAR_SENTRYBOT_CORPSE
+    size: 1
+    costSell: 60000
+    battleType: 11
+
+  # Battlefield death sprite pieces (2x2 units split into 4 quadrants, as vanilla
+  # tanks/hovertanks/sectopods do). Only piece 1 is recoverable/converts to the
+  # corpseGeo item above; pieces 2-4 exist purely for the multi-tile death visual.
+  - type: STR_PREWAR_TANKBOT_CORPSE_1
+    name: STR_PREWAR_TANKBOT_CORPSE
+    floorSprite: 68
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+  - type: STR_PREWAR_TANKBOT_CORPSE_2
+    floorSprite: 69
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_TANKBOT_CORPSE_3
+    floorSprite: 70
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_TANKBOT_CORPSE_4
+    floorSprite: 71
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_PREWAR_EYEBOT_CORPSE_1
+    name: STR_PREWAR_EYEBOT_CORPSE
+    floorSprite: 64
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 3
+  - type: STR_PREWAR_EYEBOT_CORPSE_2
+    floorSprite: 65
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_EYEBOT_CORPSE_3
+    floorSprite: 66
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_EYEBOT_CORPSE_4
+    floorSprite: 67
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  - type: STR_PREWAR_SENTRYBOT_CORPSE_1
+    name: STR_PREWAR_SENTRYBOT_CORPSE
+    floorSprite: 60
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recoveryPoints: 5
+  - type: STR_PREWAR_SENTRYBOT_CORPSE_2
+    floorSprite: 61
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_SENTRYBOT_CORPSE_3
+    floorSprite: 62
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_PREWAR_SENTRYBOT_CORPSE_4
+    floorSprite: 63
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+
+  # --- Prewar Robots: player-manufacturable HWP vehicles ---
+  # These item types intentionally match the units.rul vehicle unit types below,
+  # which is what makes them usable as a base's "Equip Vehicle" HWPs.
+  - type: STR_PREWAR_TANKBOT_UNIT
+    size: 6
+    costSell: 250000
+    transferTime: 96
+    weight: 1
+    bigSprite: 43
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 13
+    fireSound: 4
+    compatibleAmmo:
+      - STR_PLASMA_CARTRIDGE
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuSnap: 40
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 2
+
+  - type: STR_PREWAR_EYEBOT_UNIT
+    size: 4
+    costSell: 220000
+    transferTime: 96
+    weight: 1
+    bigSprite: 40
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 14
+    fireSound: 4
+    compatibleAmmo:
+      - STR_MICROFUSION_CELLS
+    accuracySnap: 85
+    accuracyAimed: 110
+    tuSnap: 25
+    tuAimed: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 3
+
+  - type: STR_PREWAR_SENTRYBOT_UNIT
+    size: 6
+    costSell: 300000
+    transferTime: 96
+    weight: 1
+    bigSprite: 43
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 15
+    fireSound: 4
+    compatibleAmmo:
+      - STR_2MM_EC_GAUSS_ROUNDS
+    accuracySnap: 75
+    accuracyAimed: 120
+    tuSnap: 40
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3

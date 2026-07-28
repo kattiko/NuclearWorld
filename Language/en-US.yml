@@ -1658,3 +1658,15 @@ en-US:
   
   
   
+
+  STR_PREWAR_TANKBOT: "Prewar Tankbot"
+  STR_PREWAR_EYEBOT: "Prewar Eyebot"
+  STR_PREWAR_SENTRYBOT: "Prewar Sentry Bot"
+  STR_PREWAR_TANKBOT_CORPSE: "Prewar Tankbot Corpse"
+  STR_PREWAR_EYEBOT_CORPSE: "Prewar Eyebot Corpse"
+  STR_PREWAR_SENTRYBOT_CORPSE: "Prewar Sentry Bot Corpse"
+  STR_PREWAR_TANKBOT_UNIT: "Reclaimed Tankbot"
+  STR_PREWAR_EYEBOT_UNIT: "Reclaimed Eyebot"
+  STR_PREWAR_SENTRYBOT_UNIT: "Reclaimed Sentry Bot"
+  STR_PREWAR_ROBOTS_SITE_ALERT: "Prewar robot activity detected"
+  STR_PREWAR_ROBOTS_SITE_MARKER_NAME: "RUINS-{0}"

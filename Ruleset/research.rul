@@ -1157,3 +1157,22 @@ research:
     points: 50
     needItem: true
 
+
+  #prewar robot corpses
+  - name: STR_PREWAR_TANKBOT_CORPSE
+    cost: 40
+    points: 50
+    needItem: true
+    destroyItem: true
+
+  - name: STR_PREWAR_EYEBOT_CORPSE
+    cost: 35
+    points: 40
+    needItem: true
+    destroyItem: true
+
+  - name: STR_PREWAR_SENTRYBOT_CORPSE
+    cost: 50
+    points: 60
+    needItem: true
+    destroyItem: true

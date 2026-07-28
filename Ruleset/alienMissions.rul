@@ -512,3 +512,17 @@
         count: 2
         trajectory: P4
         timer: 9000
+
+  - type: STR_PREWAR_ROBOTS
+    points: 500
+    objective: 3
+    spawnZone: 0 #Mission zone for terror missions
+    raceWeights:
+      0:
+        STR_PREWAR_ROBOTS: 100
+    waves:
+      - ufo: STR_PREWAR_ROBOTS_SITE # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true

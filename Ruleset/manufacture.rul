@@ -752,3 +752,45 @@ manufacture:
       STR_IRON_SCRAPS: 20
     producedItems:
       STR_PROTOTYPE_POWER_ARMOR: 1
+
+  - name: STR_PREWAR_TANKBOT_UNIT
+    category: STR_HEAVY_WEAPONS_PLATFORMS
+    requiresBaseFunc: [WORKSHOP]
+    requires:
+      - STR_PREWAR_TANKBOT_CORPSE
+    space: 10
+    time: 400
+    cost: 50000
+    requiredItems:
+      STR_PREWAR_TANKBOT_CORPSE: 5
+      STR_PLASMA_GUN: 1
+    producedItems:
+      STR_PREWAR_TANKBOT_UNIT: 1
+
+  - name: STR_PREWAR_EYEBOT_UNIT
+    category: STR_HEAVY_WEAPONS_PLATFORMS
+    requiresBaseFunc: [WORKSHOP]
+    requires:
+      - STR_PREWAR_EYEBOT_CORPSE
+    space: 8
+    time: 350
+    cost: 40000
+    requiredItems:
+      STR_PREWAR_EYEBOT_CORPSE: 5
+      STR_LASER_RIFLE: 1
+    producedItems:
+      STR_PREWAR_EYEBOT_UNIT: 1
+
+  - name: STR_PREWAR_SENTRYBOT_UNIT
+    category: STR_HEAVY_WEAPONS_PLATFORMS
+    requiresBaseFunc: [WORKSHOP]
+    requires:
+      - STR_PREWAR_SENTRYBOT_CORPSE
+    space: 12
+    time: 450
+    cost: 60000
+    requiredItems:
+      STR_PREWAR_SENTRYBOT_CORPSE: 5
+      STR_GAUSS_RIFLE: 1
+    producedItems:
+      STR_PREWAR_SENTRYBOT_UNIT: 1

@@ -1315,3 +1315,145 @@ units:
         - STR_PREWAR_SHOTGUN_SHELLS
         - STR_PREWAR_SHOTGUN_SHELLS
         - STR_BANDAGE
+
+  # --- Prewar Robots: enemy (alienDeployment-spawned) units ---
+  - type: STR_PREWAR_TANKBOT
+    race: STR_PREWAR_ROBOTS
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 100
+      health: 120
+      bravery: 110
+      reactions: 40
+      firing: 70
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 40
+    armor: STR_PREWAR_TANKBOT_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 40
+    deathSound: 23
+    moveSound: 14
+    intelligence: 3
+    aggression: 3
+    energyRecovery: 50
+    capturable: false
+
+  - type: STR_PREWAR_EYEBOT
+    race: STR_PREWAR_ROBOTS
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 65
+      stamina: 100
+      health: 55
+      bravery: 110
+      reactions: 70
+      firing: 80
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 20
+    armor: STR_PREWAR_EYEBOT_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 30
+    deathSound: 23
+    intelligence: 4
+    aggression: 3
+    energyRecovery: 60
+    capturable: false
+
+  - type: STR_PREWAR_SENTRYBOT
+    race: STR_PREWAR_ROBOTS
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 55
+      stamina: 90
+      health: 140
+      bravery: 110
+      reactions: 55
+      firing: 75
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 30
+    armor: STR_PREWAR_SENTRYBOT_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 50
+    deathSound: 23
+    intelligence: 5
+    aggression: 2
+    energyRecovery: 50
+    capturable: false
+
+  # --- Prewar Robots: player HWP vehicle units (type matches items.rul vehicle item) ---
+  - type: STR_PREWAR_TANKBOT_UNIT
+    race: STR_PREWAR_TANKBOT_UNIT
+    stats:
+      tu: 60
+      stamina: 100
+      health: 120
+      bravery: 110
+      reactions: 40
+      firing: 70
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 40
+    armor: STR_PREWAR_TANKBOT_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+
+  - type: STR_PREWAR_EYEBOT_UNIT
+    race: STR_PREWAR_EYEBOT_UNIT
+    stats:
+      tu: 65
+      stamina: 100
+      health: 55
+      bravery: 110
+      reactions: 70
+      firing: 80
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 20
+    armor: STR_PREWAR_EYEBOT_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    energyRecovery: 60
+
+  - type: STR_PREWAR_SENTRYBOT_UNIT
+    race: STR_PREWAR_SENTRYBOT_UNIT
+    stats:
+      tu: 55
+      stamina: 90
+      health: 140
+      bravery: 110
+      reactions: 55
+      firing: 75
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 30
+    armor: STR_PREWAR_SENTRYBOT_ARMOR
+    standHeight: 23
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    energyRecovery: 50
