@@ -734,6 +734,6 @@ missionScripts:
       0:
         STR_MILLITARY_BASE_REGION: 100
     firstMonth: 9
-    executionOdds: 50
+    executionOdds: 30
     randomDelay: 43500
-    startDelay: 20
+    startDelay: 60
