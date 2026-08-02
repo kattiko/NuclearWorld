@@ -1,4 +1,4 @@
- 
+﻿ 
 armors:
   - delete: STR_NONE_UC
 
@@ -682,3 +682,60 @@ armors:
     size: 2
     damageModifier: *RobotArmorDamageModifier
     loftempsSet: [ 92, 89, 90, 91 ]
+
+##########################################
+###### ROGUE PSYKERS (late-game) ########
+########################################
+# Reuses existing human sprite sets (no new art needed) so these enemies
+# visually pass as ordinary wastelanders/cultists/mutants until they open fire
+# with their minds. All three share light, unarmored protection values -
+# psykers are glass cannons that rely on staying at range.
+
+  - type: STR_PSYKER_DRIFTER_ARMOR
+    spriteSheet: WASTELANDER_ARMOR.PCK
+    spriteInv: inventory_WASTELANDER_ARMOR
+    specialWeapon: STR_PSI_AMP
+    corpseBattle:
+      - STR_PSYCHIC_POWERS
+    frontArmor: 100
+    sideArmor: 70
+    rearArmor: 10
+    underArmor: 20
+    damageModifier: *LeatherArmorDamageModifier
+    loftempsSet: [ 3 ]
+
+  - type: STR_PSYKER_ACOLYTE_ARMOR
+    spriteSheet: CHURCH_FOLLOWER.PCK
+    spriteInv: inventory_CHURCH_FOLLOWER
+    specialWeapon: STR_PSI_AMP
+    corpseBattle:
+      - STR_PSYCHIC_POWERS
+    frontArmor: 100
+    sideArmor: 70
+    rearArmor: 10
+    underArmor: 20
+    damageModifier: *ChurchRobesDamageModifier
+    loftempsSet: [ 3 ]
+
+  - type: STR_PSYKER_PREPPER_ARMOR
+    spriteSheet: PREPPER_RECRUIT.PCK
+    spriteInv: inventory_PREPPER_RECRUIT
+    specialWeapon: STR_PSI_AMP
+    corpseBattle:
+      - STR_PSYCHIC_POWERS
+    frontArmor: 100
+    sideArmor: 70
+    rearArmor: 10
+    underArmor: 20
+    damageModifier:
+      - 1.0 #0 None
+      - 0.8 #1 Armor Piercing
+      - 1.2 #2 Incendiary
+      - 1.2 #3 High Explosive
+      - 1.4 #4 Laser
+      - 0.7 #5 Plasma
+      - 0.6 #6 Stun
+      - 1.1 #7 Melee
+      - 0.2 #8 Acid
+      - 0.1 #9 Smoke
+    loftempsSet: [ 3 ]

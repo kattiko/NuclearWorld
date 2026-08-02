@@ -969,3 +969,30 @@ ufopaedia:
       - STR_CONVOY
 
     
+  - id: STR_PSYCHIC_POWERS
+    type_id: 8
+    text: STR_PSYCHIC_POWERS_UFOPEDIA
+    section: STR_KNOWLEDGE
+    requires:
+      - STR_PSYCHIC_POWERS
+
+  - id: STR_PSIONIC_LABORATORY
+    type_id: 6
+    text: STR_PSIONIC_LABORATORY_UFOPEDIA
+    section: STR_SHELTER_FACILITIES
+    requires:
+      - STR_PSI_LAB
+
+  - id: STR_PSI_AMP
+    type_id: 4
+    text: STR_PSI_AMP_UFOPEDIA
+    section: STR_EQUIPMENT_UC
+    requires:
+      - STR_PSI_AMP
+
+  - id: STR_ROGUE_PSYKERS
+    type_id: 8
+    text: STR_ROGUE_PSYKERS_UFOPEDIA
+    section: STR_WASTELAND_DWELLERS
+    requires:
+      - STR_PSYCHIC_POWERS

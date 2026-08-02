@@ -1176,3 +1176,37 @@ research:
     points: 60
     needItem: true
     destroyItem: true
+
+  ##########################################
+  ###### ROGUE PSYKERS (late-game) ########
+  ########################################
+  ##########################################
+  ###### ROGUE PSYKERS (late-game) ########
+  ########################################
+  # Recovering a psyker corpse (any look) directly unlocks Psychic Powers -
+  # this is now the ONLY visible research entry for it, since the corpse
+  # item shares its type with this research topic (needItem match). Also
+  # requires the Biolab facility to be present at the researching base.
+  - name: STR_PSYCHIC_POWERS
+    cost: 120
+    points: 100
+    needItem: true
+    destroyItem: true
+    requiresBaseFunc:
+      - BIOLAB
+    unlocks:
+      - STR_PSI_LAB
+
+  - name: STR_PSI_LAB
+    cost: 150
+    points: 75
+    dependencies:
+      - STR_PSYCHIC_POWERS
+    unlocks:
+      - STR_PSI_AMP
+
+  - name: STR_PSI_AMP
+    cost: 200
+    points: 50
+    dependencies:
+      - STR_PSI_LAB

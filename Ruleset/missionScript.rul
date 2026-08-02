@@ -737,3 +737,16 @@ missionScripts:
     executionOdds: 30
     randomDelay: 43500
     startDelay: 60
+
+  - type: roguePsykers
+    missionWeights:
+      # 0 is just for safety
+      0:
+        STR_ROGUE_PSYKERS: 100
+    regionWeights:
+      0:
+        STR_ROGUE_PSYKER_REGION: 100
+    firstMonth: 8
+    executionOdds: 35
+    randomDelay: 43500
+    startDelay: 60

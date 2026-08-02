@@ -638,7 +638,7 @@ en-US:
   STR_HIGH_EXPLOSIVE_UFOPEDIA: "This explosive should only be used for demolition purposes. Keep personnel clear of demolition sites."
   STR_MOTION_SCANNER_UFOPEDIA: "This sophisticated device uses a variety of detectors and advanced computer algorithms to identify moving enemy units. However, it requires some practice to use effectively. Click on the motion scanner icon on the tactical display. Select 'Use Scanner' from the menu. The Scanner display shows an arrow in the center which is the direction the soldier is facing (North is at the top). The flashing blobs show units which have moved recently. Large units, or fast moving units, will produce larger blobs. Static units will not be detected."
   STR_MEDI_KIT_UFOPEDIA: "The medi-kit combines a healing facility with pain killers and stimulants. In order to use the medi-kit you must face towards the soldier requiring treatment. If the soldier is stunned you must stand over the body. Click on the medi-kit icon and select 'use medi-kit' from the menu.{NEWLINE}HEALING> Red body parts show fatal wounds. Click on a body part that is wounded. Click on the 'Heal' button. One fatal wound will be cured and some health restored.{NEWLINE}STIMULANT> This will restore energy and revive unconscious (stunned) soldiers. In order to revive an unconscious soldier you must stand directly over the body.{NEWLINE}PAIN KILLER> This will restore the morale of wounded soldiers up to an amount equivalent to the soldier's lost health."
-  STR_PSI_AMP_UFOPEDIA: "The Psi-amp can only be used by soldiers with psionic skill. During combat, click on the Psi-amp, select the type of attack, and select a target unit with the cursor. There are two types of psionic attack:{NEWLINE}PANIC UNIT> If the attack is successful it will reduce the target's morale and may cause it to panic.{NEWLINE}MIND CONTROL> If this is successful then you will gain immediate control of the enemy unit as if it was one of your own. It is more difficult to be successful with this type of attack."
+  STR_PSI_AMP_UFOPEDIA: "The Psychic Amplifier can only be used by soldiers with psionic skill. During combat, click on the Amplifier, select the type of attack, and select a target unit with the cursor. There are two types of psionic attack:{NEWLINE}PANIC UNIT> If the attack is successful it will reduce the target's morale and may cause it to panic.{NEWLINE}MIND CONTROL> If this is successful then you will gain immediate control of the enemy unit as if it was one of your own. It is more difficult to be successful with this type of attack.{NEWLINE}Reverse-engineered from what was recovered off a dead rogue psyker, the amplifier focuses raw psionic talent into something a trained mind can direct at will."
   STR_STUN_ROD_UFOPEDIA: "This device can only be used in close combat, but will stun a living organism without killing it by using electric shocks."
   STR_MIND_PROBE_UFOPEDIA: "The mind probe is an alien communication device which is used to take information directly from brain waves. X-Com units can use this device in combat to display an alien's characteristics. Click on the mind probe and the 'use' option. Then click on an alien with the cursor."
   STR_PLASMA_PISTOL_UFOPEDIA: "Plasma Pistols are a lethal alien weapon based on accelerating particles from within a minute anti-gravity field."
@@ -743,7 +743,7 @@ en-US:
   STR_REMAINING_PSI_LAB_CAPACITY: "Remaining Psi-lab capacity> {ALT}{0}"
   STR_PSIONIC__STRENGTH: "Psionic{NEWLINE}Strength"
   STR_PSIONIC_SKILL_IMPROVEMENT: "Psionic Skill{NEWLINE}/Improvement"
-  STR_PSI_AMP: "Psi-Amp"
+  STR_PSI_AMP: "Psychic Amplifier"
   STR_IN_TRAINING: "In{NEWLINE}Training?"
   STR_TARGETTED_BY: "TARGETTED BY:"
   STR_WEAPONS_CREW_HWPS: "WEAPONS/{NEWLINE}CREW/HWPs"
@@ -1672,3 +1672,34 @@ en-US:
   STR_PREWAR_ROBOTS_SITE_MARKER_NAME: "RUINS-{0}"
   STR_PREWAR_ROBOTS_SITE_BRIEFING: "Local Settlers told us of a group of prewar robots that recently reactivated and have been causing damage. Proceed with extreme caution, these robots were built for the Great War and carry advanced weaponry."
 
+
+  #####################################
+  ###### ROGUE PSYKERS (late-game) ####
+  #####################################
+  STR_PSYKER_CORPSE: "Psyker Corpse"
+  STR_PSYCHIC_POWERS: "Psychic Powers"
+  STR_PSYCHIC_POWERS_UFOPEDIA: "Dissection of the rogue psyker's remains reveals a brain reshaped by chronic, low-grade exposure to radiation and environmental mutagens. Whatever the Great War changed in these people, it appears to be replicable. With this data, our scientists believe we can build the equipment necessary to amplify latent psionic potential in our own personnel."
+
+  STR_ROGUE_PSYKERS: "Rogue Psykers"
+  STR_ROGUE_PSYKERS_UFOPEDIA: "Not raiders, not cultists, not mutants in the usual sense - the rogue psykers are wastelanders whose brains mutated to give them powerful psionic powers. They drift alone or in small bands, ostracized and feared. They strike with fire, crushing psychic force, or a bolt that seems to stop time itself, to steal and pillage whatever they happen to need. Whatever their appearance may suggest - drifter's coat, cultist's robe, a prepper's bunker gear - the mind underneath is the real weapon."
+
+  STR_PSYKER_DRIFTER_PYRO: "Pyromantic Drifter"
+  STR_PSYKER_DRIFTER_BLAST: "Psychic Drifter"
+  STR_PSYKER_DRIFTER_STASIS: "Stasis Drifter"
+  STR_PSYKER_ACOLYTE_PYRO: "Pyromantic Acolyte"
+  STR_PSYKER_ACOLYTE_BLAST: "Psychic Acolyte"
+  STR_PSYKER_ACOLYTE_STASIS: "Stasis Acolyte"
+  STR_PSYKER_PREPPER_PYRO: "Pyromantic Prepper"
+  STR_PSYKER_PREPPER_BLAST: "Psychic Prepper"
+  STR_PSYKER_PREPPER_STASIS: "Stasis Prepper"
+
+  STR_PYROKINETIC_BLAST: "Pyrokinetic Conduit"
+  STR_PYROKINETIC_BLAST_ATTACK: "Pyrokinetic Blast"
+  STR_PSYCHIC_BLAST: "Psychic Resonator"
+  STR_PSYCHIC_BLAST_ATTACK: "Psychic Blast"
+  STR_STASIS_BLAST: "Stasis Conduit"
+  STR_STASIS_BLAST_ATTACK: "Stasis Blast"
+
+  STR_ROGUE_PSYKER_SITE_ALERT: "Rogue Psykers detected"
+  STR_ROGUE_PSYKER_SITE_MARKER_NAME: "PSYKER ACTIVITY-{0}"
+  STR_ROGUE_PSYKER_SITE_BRIEFING: "Local wastelanders told us of rogue psykers that have been using their mental powers to terrorize local residents. Exterminate these psykers fast before they have a chance to use their powers."

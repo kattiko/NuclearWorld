@@ -1,4 +1,4 @@
-units:
+﻿units:
 
   - delete: STR_TANK_CANNON
  
@@ -1501,3 +1501,212 @@ units:
     value: 20
     deathSound: 23
     energyRecovery: 50
+
+##########################################
+###### ROGUE PSYKERS (late-game) ########
+########################################
+# Three "basic types" (visual models, reusing existing human sprite sets),
+# each with three power variants. Every variant gets the shared Psychic
+# Amplifier automatically from its armor's specialWeapon (Panic + Mind
+# Control), plus ONE unique offensive psi power via builtInWeaponSets.
+
+# --- Drifter look (reuses Wastelander model) ---
+  - type: STR_PSYKER_DRIFTER_PYRO
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: &PsykerDrifterStats
+      tu: 58
+      stamina: 60
+      health: 120
+      bravery: 90
+      reactions: 45
+      firing: 25
+      throwing: 35
+      strength: 35
+      psiStrength: 75
+      psiSkill: 60
+      melee: 25
+      mana: 80
+    armor: STR_PSYKER_DRIFTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 60
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 2
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_PYRO_BLAST
+
+  - type: STR_PSYKER_DRIFTER_BLAST
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerDrifterStats
+    armor: STR_PSYKER_DRIFTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 60
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 2
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STUN_BLAST
+
+  - type: STR_PSYKER_DRIFTER_STASIS
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerDrifterStats
+    armor: STR_PSYKER_DRIFTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 60
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 2
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STASIS_BLAST
+
+# --- Acolyte look (reuses Church Follower model) ---
+  - type: STR_PSYKER_ACOLYTE_PYRO
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: &PsykerAcolyteStats
+      tu: 56
+      stamina: 55
+      health: 110
+      bravery: 100
+      reactions: 40
+      firing: 20
+      throwing: 30
+      strength: 30
+      psiStrength: 80
+      psiSkill: 65
+      melee: 20
+      mana: 80
+    armor: STR_PSYKER_ACOLYTE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 65
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_PYRO_BLAST
+
+  - type: STR_PSYKER_ACOLYTE_BLAST
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerAcolyteStats
+    armor: STR_PSYKER_ACOLYTE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 65
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STUN_BLAST
+
+  - type: STR_PSYKER_ACOLYTE_STASIS
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerAcolyteStats
+    armor: STR_PSYKER_ACOLYTE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 65
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 1
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STASIS_BLAST
+
+# --- Prepper look (reuses Prepper Recruit model; doomsday preppers touched by their own sealed-bunker reactors) ---
+  - type: STR_PSYKER_PREPPER_PYRO
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: &PsykerPrepperStats
+      tu: 55
+      stamina: 65
+      health: 140
+      bravery: 85
+      reactions: 35
+      firing: 15
+      throwing: 30
+      strength: 45
+      psiStrength: 90
+      psiSkill: 55
+      melee: 35
+      mana: 80
+    armor: STR_PSYKER_PREPPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 70
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 3
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_PYRO_BLAST
+
+  - type: STR_PSYKER_PREPPER_BLAST
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerPrepperStats
+    armor: STR_PSYKER_PREPPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 70
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 3
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STUN_BLAST
+
+  - type: STR_PSYKER_PREPPER_STASIS
+    race: STR_ROGUE_PSYKERS
+    rank: STR_LIVE_PSYKER
+    stats: *PsykerPrepperStats
+    armor: STR_PSYKER_PREPPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 70
+    deathSound: [41, 42, 43]
+    intelligence: 6
+    aggression: 3
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      -
+        - STR_PSI_STASIS_BLAST

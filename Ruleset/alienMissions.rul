@@ -526,3 +526,17 @@
         trajectory: P10
         timer: 0
         objective: true
+
+  - type: STR_ROGUE_PSYKERS
+    points: 300
+    objective: 3
+    spawnZone: 0 #Mission zone for terror missions
+    raceWeights:
+      0:
+        STR_ROGUE_PSYKERS: 100
+    waves:
+      - ufo: STR_ROGUE_PSYKER_SITE # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true

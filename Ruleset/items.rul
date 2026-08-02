@@ -2592,3 +2592,134 @@ items:
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
+
+##########################################
+###### ROGUE PSYKERS (late-game) ########
+########################################
+
+  # --- Single shared corpse item for all 3 psyker looks. needItem-based
+  # research requires the research topic's name to exactly match an item
+  # type, so using one shared corpse (rather than 3 separate ones) means
+  # only ONE research entry (Psychic Powers itself) ever appears in the
+  # research list - no separate "Psyker Corpse (X)" clutter.
+  - type: STR_PSYCHIC_POWERS
+    name: STR_PSYKER_CORPSE
+    battleType: 11
+    costSell: 3000
+    weight: 30
+    bigSprite: 1020
+    floorSprite: 1020
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    recover: true
+
+  # --- Psychic Amplifier: the vanilla Psi-Amp, restored and reflavored.
+  # Grants Panic and Mind Control to any soldier with psiSkill, exactly like
+  # stock UFO Defense. Display name comes from the STR_PSI_AMP string in
+  # Language/en-US.yml, overridden to "Psychic Amplifier".
+  - type: STR_PSI_AMP
+    size: 0.1
+    costBuy: 250000
+    costSell: 60000
+    weight: 6
+    bigSprite: 620
+    floorSprite: 620
+    handSprite: 620
+    psiRequired: true
+    battleType: 9
+    invWidth: 1
+    invHeight: 3
+    requires:
+      - STR_PSI_AMP
+    categories: [STR_PSIONICS]
+
+  # --- NOTE: these three were originally implemented as battleType 9
+  # (psi-amp) items using the "Use" action. In testing, the alien AI never
+  # selected that action - OXCE's AI has dedicated logic for choosing
+  # Panic/Mind Control on a psi-amp, but no logic for treating a psi-amp's
+  # generic "Use" as an attack (that's meant for player-clicked consumables).
+  # So these are now ordinary self-contained ranged weapons (battleType 1),
+  # which the AI's normal "should I shoot" logic handles reliably. They're
+  # no longer mechanically gated by psiSkill - only the shared Psychic
+  # Amplifier's Panic/Mind Control still uses the psi formula - but they
+  # keep their psychic flavor/names and their elemental AoE effects.
+
+  # --- Pyrokinetic Blast: ranged fire AoE.
+  - type: STR_PSI_PYRO_BLAST
+    name: STR_PYROKINETIC_BLAST
+    size: 0.1
+    weight: 4
+    bigSprite: 610
+    floorSprite: 610
+    handSprite: 610
+    bulletSprite: 14
+    fireSound: 4
+    clipSize: -1
+    accuracySnap: 55
+    tuSnap: 60
+    power: 55
+    damageType: 2 # Incendiary
+    blastRadius: 3
+    damageAlter:
+      RandomType: 7
+      ToArmorPre: 0.2
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recover: false
+
+  # --- Psychic Blast: heavy area stun. No lethal damage (ToHealth: 0),
+  # pure ToStun, meant to drop a whole squad unconscious at once.
+  - type: STR_PSI_STUN_BLAST
+    name: STR_PSYCHIC_BLAST
+    size: 0.1
+    weight: 4
+    bigSprite: 610
+    floorSprite: 610
+    handSprite: 610
+    bulletSprite: 14
+    fireSound: 4
+    clipSize: -1
+    accuracySnap: 50
+    tuSnap: 65
+    power: 90
+    damageType: 6 # Stun
+    blastRadius: 4
+    damageAlter:
+      RandomType: 7
+      ToHealth: 0.0
+      ToStun: 1.0
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recover: false
+
+  # --- Stasis Blast: small area, mostly TU/Energy drain instead of HP -
+  # "freezes" a cluster of targets in place for the rest of the turn/next turn.
+  - type: STR_PSI_STASIS_BLAST
+    name: STR_STASIS_BLAST
+    size: 0.1
+    weight: 4
+    bigSprite: 610
+    floorSprite: 610
+    handSprite: 610
+    bulletSprite: 14
+    fireSound: 4
+    clipSize: -1
+    accuracySnap: 60
+    tuSnap: 50
+    power: 70
+    damageType: 0 # None
+    blastRadius: 2
+    damageAlter:
+      RandomType: 7
+      ToHealth: 0.0
+      ToStun: 0.1
+      ToTime: 1.0
+      ToEnergy: 0.5
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recover: false
+
